@@ -1,0 +1,440 @@
+.init-content{
+    position: relative;
+    background-color: #CAEDFF;
+    width: 100%;
+    height: 600px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.meme-cont{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.nav-container{
+    display: table;
+    background-color: #CAEDFF;
+    width: 100%;
+}
+.about-nav , .logo{
+    display: inline;
+}
+
+.nav {
+    display: table-cell;
+    vertical-align: middle;
+}
+.container{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 12px;
+    box-sizing: border-box;
+    display: table;
+    overflow-y: hidden;
+    width: 100%;
+    max-height: 80px;
+}
+
+
+
+#profile{
+    align-self: center;
+}
+
+.nav ul {
+    float: right;
+    max-width: calc(100vw - 480px);
+    overflow: hidden;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+}
+
+.nav .wsite-menu-item {
+    display: block;
+    padding: 12px 20px;
+    border: 1px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    color: black;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    -webkit-transition: opacity 300ms ease;
+    -moz-transition: opacity 300ms ease;
+    -ms-transition: opacity 300ms ease;
+    transition: opacity 300ms ease;
+}
+
+.sidenav, #s-btn{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 900px) {
+    .wrap, .hobbie-item, .project-container, .memes-container, #contact-page, .project-item, #project-wrap{
+        display:flex;
+        flex-direction: column;
+    }
+
+    #heading{
+        display: block !important;
+        padding: 10px;
+        margin: 0px !important;
+        text-align: center !important;
+    }
+
+    #content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button{
+        border-color: black;
+    }
+
+    img{
+        float: none !important;
+        margin: 0% !important;
+        padding: 0px !important;
+        align-self: center !important;
+    }
+
+    #profile{
+        float: center !important;
+        position: relative;
+    }
+
+    .profile{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hobbie-item{
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .project-item > *{
+        align-self: center;
+    }
+
+    .hob-heading{
+        margin: 0%;
+        padding: 0%;
+        align-self: center;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1040px) {
+    .nav, .logo{
+        display: none;
+        height: 0px;
+    }
+
+    #s-btn{
+        visibility: visible;
+        float: right;
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        overflow: hidden;
+        font-size:50px;
+    }
+    
+    .sidenav {
+        visibility: visible;
+        display:flex;
+        flex-direction: column;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .menu-item, a{
+        padding: 8px 8px 8px 10px;
+        margin: 0px;
+        display: block;
+        text-decoration: none;
+        font-size: 12px;
+        color: black;
+        transition: 0.3s;
+    }
+    .menu-item{
+        align-self: center;
+    }
+      
+    .sidenav a:hover {
+        color: #CAEDFF;
+      }
+      
+    .sidenav{
+        top: 0;
+        right: 25px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.nav li:not(.wsite-nav-cart)#active > .wsite-menu-item {
+    border-color: inherit;
+}
+
+.nav li .wsite-menu-item:hover {
+    opacity: 0.6;
+}
+
+.nav{
+    padding-right: 0;
+}
+
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;;
+}
+
+.hobbie-item img{
+    float: right;
+    margin-right: 15%;
+    margin-top: 2%;
+}
+
+.sec-heading{
+    font-size: 2rem;
+    text-align: center;
+    margin: 30px;
+}
+
+.hob-heading{
+    width: 70%;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#profile{
+    margin-top: 7%;;
+    margin-right: 17%;
+    float: right;
+    border-radius: 50%;
+    opacity: 85%;
+}
+
+.hobbie-item{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    line-height:35px;
+    padding-bottom: 70px;
+}
+
+.project-item{
+    text-align: center;
+    padding: 20px;
+    min-height: 250px;
+    line-height: 30px;
+}
+
+#title{
+    padding-top: 20px;
+}
+
+.logo{
+    padding-right: 25px;
+    vertical-align: middle;
+    max-width: 100%;
+    font-size: 1.1em !important;
+    line-height: 1.4em !important;
+}
+
+.project-item img{
+    float: right;
+    margin-right: 10%;
+    padding-left:10px;
+    margin-top: 2%;
+
+}
+
+.cont-item{
+    padding-bottom : 10px;
+}
+
+.cont-ref{
+    font-size: larger;
+    font-weight: 100;
+}
+
+#contact-page{
+    background-color: #CAEDFF;
+}
+
+.pic-and-info{
+    display: inline;
+    width: 100%;
+}
+
+#heading{
+    display: inline-block;
+    margin-left: 20%; 
+    margin-top: 10%;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 20%;
+    margin-top: 20px;
+    width: 220px;
+    height: 50px;
+    border: 2px solid;
+    background-color: #FBF0B2;
+    max-width: 220px;
+
+}
+
+.footer-wrap{
+    width: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    padding: 60px 40px;
+    margin: 0 auto 20px;
+    background: transparent;
+    padding: 0 0 0 1em;
+    color: #8CABFF;
+}
+.wsite-footer {
+    width: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-bottom: 70px;
+}
+
+.paragraph {
+    margin-bottom: 0;
+    padding-left: 3em !important;
+    margin: 5px 0 !important;
+    padding-left: 5px !important;
+    margin: 3px 0 0 !important;
+    list-style: disc outside !important;
+    list-style: decimal outside !important;
+}
+
+.wsite-social-item {
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px;
+    color: #8CABFF;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.hobbie-item{
+    margin-bottom: 20px;
+}
+
+.wsite-social-item:first-child {
+    margin-left: 0;
+}
+
+.wsite-social-item:last-child {
+    margin-right: 0;
+}
+
+.wsite-social-item:hover {
+    color: #8CABFF;
+}
+
+.wsite-button {
+    display: inline-block;
+    height: auto;
+    padding: 0;
+    background-image: none !important;
+    background-color: transparent;
+    color: #8CABFF !important;
+    border: 1px solid #8CABFF !important;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+.wsite-button:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.wsite-button .wsite-button-inner {
+    display: inline-block;
+    height: auto;
+    padding: 14px 30px;
+    background: transparent;
+    background-image: none !important;
+    color: inherit;
+    letter-spacing: 0.03em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.wsite-button-large {
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+}
+
+.wsite-button-large:hover {
+    background-color: rgba(255,255,255,0.2) !important;
+}
+
+.wsite-button-highlight, #wsite-com-product-add-to-cart.wsite-button-highlight {
+    background-color: #8CABFF !important;
+    color: #ffffff !important;
+    border: 1px solid #8CABFF !important;
+}
+
+.wsite-button-highlight:hover, #wsite-com-product-add-to-cart.wsite-button-highlight:hover {
+    background-color: transparent !important;
+    color: #8CABFF !important;
+}
+
+.wsite-button-highlight.wsite-button-large:not(.wsite-buy-button), #wsite-com-product-add-to-cart.wsite-button-highlight.wsite-button-large:not(.wsite-buy-button) {
+    background-color: #ffffff !important;
+    color: #8CABFF!important;
+    border: 1px solid #ffffff !important;
+}
+
+.wsite-button-highlight.wsite-button-large:not(.wsite-buy-button):hover, #wsite-com-product-add-to-cart.wsite-button-highlight.wsite-button-large:not(.wsite-buy-button):hover {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
